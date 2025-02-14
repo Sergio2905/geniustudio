@@ -3,7 +3,8 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20250211144540">
+    <link rel="stylesheet" href="css/style.min.css?_v=20250214125700">
+    <link rel="icon" type="image/webp" href="img/favicon.webp">
     <title>Geniustudio</title>
 </head>
 
@@ -85,7 +86,12 @@
                         <a href="#" class="categories__link">Категорія 3</a>
                     </div>
                     <article class="single__body">
-                        <picture><source srcset="img/blog/image.webp" type="image/webp"><img src="img/blog/image.jpg" alt="Image"></picture>
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="img/blog/image.webp" type="image/webp">
+                            <source media="(min-width: 577px)" srcset="img/blog/image2.webp" type="image/webp">
+                            <source media="(max-width: 578px)" srcset="img/blog/image3.webp" type="image/webp">
+                            <img src="img/blog/image.jpg" alt="Image">
+                        </picture>
                         <p>
                             Сьогодні Інтернет — це надзвичайно конкурентне середовище. Тому стояти не тільки на головних
                             позиціях, а навіть на першій сторінці пошукової системи — мета, практично недосяжна для
@@ -155,7 +161,12 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="single__latest latest">
+                </div>
+            </section>
+
+            <section class="latest">
+                <div class="latest__container container">
+                    <div class="latest__body">
                         <h3 class="latest__title">Останнє з блогу</h3>
                         <div class="latest__slider">
                             <div class="latest__wrapper swiper-wrapper">
@@ -281,7 +292,7 @@
 </footer>
     </div>
 
-    <script src="js/app.min.js?_v=20250211144540" defer></script>
+    <script src="js/app.min.js?_v=20250214125700" defer></script>
 </body>
 
 </html>
