@@ -3,7 +3,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20250214125700">
+    <link rel="stylesheet" href="css/style.min.css?_v=20250215130753">
     <link rel="icon" type="image/webp" href="img/favicon.webp">
     <title>Geniustudio</title>
 </head>
@@ -21,10 +21,10 @@
                 <nav class="menu__body">
                     <ul class="menu__list" data-mob="options, after">
                         <li class="menu__item"><a href="#" class="menu__link">Головна</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Завантажити бот</a></li>
+                        <li class="menu__item"><a href="#about" class="menu__link">Завантажити бот</a></li>
                         <li class="menu__item"><a href="#" class="menu__link">Інтеграція з СРМ</a></li>
                         <li class="menu__item"><a href="#" class="menu__link">Інструкція</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Вартість</a></li>
+                        <li class="menu__item"><a href="#price" class="menu__link">Вартість</a></li>
                         <li class="menu__item"><a href="#" class="menu__link">FAQ</a></li>
                         <li class="menu__item"><a href="#" class="menu__link">Контакти</a></li>
                     </ul>
@@ -68,7 +68,24 @@
                     <div class="main__body">
                         <div class="main__text">
                             <div class="main__mask">
-                                СКЛАДНО ОЦІНИТИ ПОЗИЦІЇ ВАШОГО САЙТУ В ГУГЛІ?
+                                СКЛАДНО ОЦІНИТИ
+                                ПОЗИЦІЇ ВАШОГО
+                                САЙТУ В ГУГЛІ?
+                            </div>
+                            <div class="main__mask">
+                                <span class="main__fly main__fly_1">СКЛАДНО ОЦІНИТИ</span>
+                                <span class="main__fly main__fly_2">ПОЗИЦІЇ ВАШОГО</span>
+                                <span class="main__fly main__fly_3">САЙТУ В ГУГЛІ?</span>
+                            </div>
+                            <div class="main__mask">
+                                СКЛАДНО ОЦІНИТИ
+                                ПОЗИЦІЇ ВАШОГО
+                                САЙТУ В ГУГЛІ?
+                            </div>
+                            <div class="main__mask">
+                                <span class="main__fly main__fly_3">СКЛАДНО ОЦІНИТИ</span>
+                                <span class="main__fly main__fly_1">ПОЗИЦІЇ ВАШОГО</span>
+                                <span class="main__fly main__fly_2">САЙТУ В ГУГЛІ?</span>
                             </div>
                         </div>
                         <div class="main__extra">
@@ -193,7 +210,7 @@
                     <div class="results__body">
                         <div class="results__item">
                             <div class="results__header">Кількість успішних проектів</div>
-                            <div class="results__value">100К</div>
+                            <div class="results__value counters"><span data-counter="">100</span>К</div>
                             <div class="results__desc">
                                 <p>
                                     Ми успішно реалізували понад [X] проєктів, кожен з яких – яскраве підтвердження
@@ -211,7 +228,7 @@
                         </div>
                         <div class="results__item">
                             <div class="results__header">Кількість користувачів</div>
-                            <div class="results__value">100К</div>
+                            <div class="results__value counters"><span data-counter="">100</span>К</div>
                             <div class="results__desc">
                                 Наша спільнота зростає з кожним днем – більше [Х] користувачів довірилися нам і відчули
                                 переваги професійного підходу.
@@ -223,7 +240,7 @@
                         </div>
                         <div class="results__item">
                             <div class="results__header">Кількість ключів в базі</div>
-                            <div class="results__value">100К</div>
+                            <div class="results__value counters"><span data-counter="">100</span>К</div>
                             <div class="results__desc">
                                 Наша база містить більше [Х] ключових слів, що дозволяє максимально точно аналізувати
                                 ринкові запити та ефективно оптимізувати сайти.
@@ -237,7 +254,7 @@
                 </div>
             </section>
 
-            <section class="price">
+            <section class="price" id="price">
                 <div class="price__container container">
                     <h2 class="price__title subtitle">Прайс-лист</h2>
                     <div class="price__slider">
@@ -410,11 +427,11 @@
                 </div>
             </section>
 
-            <section class="about">
+            <section class="about" id="about">
                 <div class="about__container container">
                     <div class="about__block">
                         <div class="about__info">
-                            <h2 class="about__title about__title_underline">“Назва бота” </h2>
+                            <a href="#" class="about__title about__title_underline">“Назва бота” </a>
                             <div class="about__text">
                                 Для використання <span>просто додайте</span> бота в телеграмі <span>в свою групу</span>
                                 <b>та слідуйте інструкціям. Також ви можете пройти реєстрацію на сайті та отримувати</b>
@@ -527,13 +544,15 @@
                             ЯКЩО ВАС ЦІКАВИТЬ КОМПЛЕКСНА ПОСЛУГА SEO, ДЕТАЛЬНІШЕ ТУТ
                         </h2>
                         <div class="studio__info">
-                            <p class="studio__text" data-desk="icon, after" data-mob="icon, append">
-                                За цим посиланням ви перейдете на головний сайт студії
-                            </p>
-                            <div class="studio__icon" data-move="icon, 768">
-                                <svg>
-                                    <use href="img/icons/icons.svg#info"></use>
-                                </svg>
+                            <div class="studio__help">
+                                <p class="studio__text" data-desk="icon, after" data-mob="icon, append">
+                                    За цим посиланням ви перейдете на головний сайт студії
+                                </p>
+                                <div class="studio__icon" data-move="icon, 768">
+                                    <svg>
+                                        <use href="img/icons/icons.svg#info"></use>
+                                    </svg>
+                                </div>
                             </div>
                             <a href="#" class="studio__link">GENIUSTUDIO</a>
                         </div>
@@ -613,7 +632,7 @@
 </footer>
     </div>
 
-    <script src="js/app.min.js?_v=20250214125700" defer></script>
+    <script src="js/app.min.js?_v=20250215130753" defer></script>
 </body>
 
 </html>
